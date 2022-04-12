@@ -27,20 +27,20 @@ public:
     {
         fflush(stdin);
         cout << "Nhap ma san pham:";
-        cin >> this->ma;
+        getline(cin, this->ma);
         fflush(stdin);
         cout << "Nhap ten nha xuat ban:";
         getline(cin, this->tenxb);
         fflush(stdin);
         cout << "Nhap ngay xuat ban:";
-        cin >> this->ma;
+        cin >> this->ngayxb;
         cout << "Nhap don gia:";
         cin >> this->donggia;
     }
     void xuat()
     {
         cout << "Ma san pham:" << this->ma << endl;
-        cout << "Ma nha xuat ban:" << this->tenxb << endl;
+        cout << "Nha xuat ban:" << this->tenxb << endl;
         cout << "Ngay xuat ban:" << this->ngayxb << endl;
         cout << "Don gia:" << this->donggia << endl;
     }
@@ -221,6 +221,7 @@ void nhapthongtin()
                 cin >> masach;
                 for (int i = 0; i < n; i++)
                 {
+                    cout << "--------- Thong tin sach thu " << i + 1 << "-----------" << endl;
                     if (masach == a[i].ma)
                     {
                         cout << a[i];
