@@ -265,6 +265,7 @@ void nhapthongtin()
                 {
                     if (a[i].tacgia == "Le Minh")
                     {
+                        cout << "----------------------------------------" << endl;
                         a[i].sapxep(a, n);
                         cout << a[i];
                     }
